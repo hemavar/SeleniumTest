@@ -6,20 +6,16 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class GoogleSearchPageFirst {
+public class SeleniumSecondPage {
 
-private static WebElement element = null;
-	
+	private static WebElement element = null;
 	
 	public static WebElement textbox_searchname(WebDriver driver) {
 		element = driver.findElement(By.name("q"));
 		return element;
 	}
-	public static void textbox_submitbutton(WebDriver driver) {
-		element.submit();
-	}
+
 	public static WebElement button_searchname(WebDriver driver) {
-		
 		//Explicit wait
 		WebDriverWait wait= new WebDriverWait(driver,10);
 		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(By.name("btnK")));

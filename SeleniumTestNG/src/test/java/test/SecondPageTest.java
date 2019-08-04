@@ -1,27 +1,28 @@
 package test;
 
 import org.testng.annotations.Test;
+import org.testng.annotations.Test;
+import org.testng.annotations.Test;
+import org.testng.annotations.Test;
+import org.testng.annotations.Test;
+
 import io.github.bonigarcia.wdm.WebDriverManager;
+import pages.GoogleSearchPageFirst;
 
 import org.testng.annotations.BeforeTest;
-import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterTest;
 
-
-import pages.GoogleSearchPageFirst;
-public class FirstPageTest {
+public class SecondPageTest {
 	public static WebDriver driver = null;
 	
-	
   @Test
-  public void googleSearchTest() {
+  public void f() {
 	  
 	  driver.get("http://www.google.com");
-	  GoogleSearchPageFirst.textbox_searchname(driver).sendKeys("Selenium");
+	  GoogleSearchPageFirst.textbox_searchname(driver).sendKeys("Jenkins");
 	  //GoogleSearchPageFirst.textbox_submitbutton(driver);
 	  
 	  GoogleSearchPageFirst.button_searchname(driver).sendKeys(Keys.RETURN);
@@ -37,7 +38,6 @@ public class FirstPageTest {
   public void beforeTest() {
 	  WebDriverManager.chromedriver().setup();
 	  driver = new ChromeDriver();
-	  
   }
 
   @AfterTest
