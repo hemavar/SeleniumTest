@@ -22,7 +22,7 @@ private static WebElement element = null;
 		
 		//Explicit wait
 		WebDriverWait wait= new WebDriverWait(driver,10);
-		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(By.name("btnK")));
+	//	WebElement element = wait.until(ExpectedConditions.elementToBeClickable(By.name("btnK")));
 			 
 		element = driver.findElement(By.name("btnK"));
 

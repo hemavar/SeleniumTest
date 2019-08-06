@@ -23,9 +23,9 @@ public class SecondPageTest {
 	  
 	  driver.get("http://www.google.com");
 	  GoogleSearchPageFirst.textbox_searchname(driver).sendKeys("Jenkins");
-	  //GoogleSearchPageFirst.textbox_submitbutton(driver);
+	  GoogleSearchPageFirst.textbox_submitbutton(driver);
 	  
-	  GoogleSearchPageFirst.button_searchname(driver).sendKeys(Keys.RETURN);
+	  //GoogleSearchPageFirst.button_searchname(driver).sendKeys(Keys.RETURN);
 	
 	  try {
 			Thread.sleep(5000);
